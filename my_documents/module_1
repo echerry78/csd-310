@@ -1,0 +1,45 @@
+student_id:{
+
+type:Number
+
+},
+
+first_name:{
+
+type:String
+
+},
+
+last_name:{
+
+type:String
+
+},
+
+//one student can have many enrollments
+
+//so array of enrollmentID will come here
+
+enrollments:[{
+
+type:ObjectId,
+
+ref:"Enrollment"
+
+}],
+
+//one student enrolls in many courses
+
+//so we will keep all courseId in which student is enrolled
+
+courses:[
+
+{
+
+type:ObjectId,
+
+ref:"Course"
+
+}
+
+]
